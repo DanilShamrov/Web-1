@@ -97,8 +97,10 @@
     }
     #log{
         font-size: 36px;
+        text-align: center;
     }
     #_log{
         font-size: 24px;
     }
+
 }
