@@ -1,0 +1,104 @@
+@keyframes loading{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes loadRotation{
+    0%{
+        rotate: 0deg;
+        position: top;
+    }
+    25%{
+        rotate: 90deg;
+        position: right;
+    }
+    50%{
+        rotate: 180deg;
+        position: bottom;
+    }
+    75%{
+        rotate: 270deg;
+        position: left;
+    }
+    100%{
+        rotate: 360deg;
+        position: top;
+    }
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    background-color: #799aea;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#log{
+    font-size: 48px;
+    color: white;
+    text-align: right;
+    margin-right: 5%;
+}
+#loadingBorder{
+    height: 50px;
+    width: 80vw;
+    border: 2px solid white;
+    
+}
+
+#loadingAnim{
+    height: 100%;
+    width: 0px;
+    background-color: green;
+    animation: loading 7s ease-out 0s infinite;
+}
+.loadingCircle{
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+#loadingCircleBox{
+    
+    animation: loadRotation 3s linear 0s infinite normal none;
+    width: 50px;
+    height: 50px;
+    justify-content: space-around;
+}
+.bar{
+    background-color: #36368d;
+    color: white;
+    font-size: 24px;
+     height: 20vh;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+.barSubclass{
+    display: flex;
+    justify-content: space-between;
+}
+#_log{
+    font-size: 36px;
+}
+@media (max-width: 750px) {
+    .bar{
+        font-size: 12px;
+    }
+    #log{
+        font-size: 36px;
+    }
+    #_log{
+        font-size: 24px;
+    }
+}

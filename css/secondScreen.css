@@ -1,0 +1,88 @@
+
+
+#secondScreen{
+    width: 100vw;
+    
+}
+.bar2{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 36px;
+}
+#priceList{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #799aea;
+}
+
+.listItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 0%;
+    border-radius: 15px;
+    font-size: 24px;
+}
+.tc1{
+    background-image: url("../img/tc1.svg");
+}
+.tc{
+    background-image: url("../img/tc.svg");
+}
+.tc2{
+    background-image: url("../img/tc2.svg");
+}
+.listItem:hover{
+    scale: 1.15;
+}
+.pricelistName{
+    height: 10%;
+    align-items: center;
+    display: flex;
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 40%;
+    height: 70%;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    
+
+}
+
+@media (max-width: 1050px) {
+    #priceList{
+        flex-direction: column;
+    }
+    .listItem{
+        width: 100%;
+        font-size: 20px;
+    }
+    .desc{
+        width: 20%;
+    }
+    .bar2{
+        font-size: 20px;
+    }
+    
+}

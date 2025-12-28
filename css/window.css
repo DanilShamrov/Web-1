@@ -1,0 +1,60 @@
+@keyframes textFlash {
+    0%{
+        color:white;
+    }
+    50%{
+        color:red;
+    }
+    100%{
+        color:white;
+    }
+}
+
+.window{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+     height: 20vh;
+    justify-content: space-around;
+    background-color: #0054e3;
+    align-items: center;
+}
+.windowHeader{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: white;
+}
+.windowTitle{
+    margin-left: 10px;
+    animation: textFlash 2s linear 0s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.windowButtons{
+    display: flex;
+    height:125%;
+}
+.windowArea{
+    display: flex;
+    background-color: white;
+    font-size: 36px;
+    text-align: center;
+    height:80%;
+    width:98%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 850px) {
+    
+    .windowArea{
+        font-size: 12px;
+    }
+    .windowTitle{
+        font-size: 16px;
+    }
+}
